@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-:root {
+:root {/*Основные параметры-шаблоны*/
     --primary-color: #6a11cb;
     --secondary-color: #2575fc;
     --accent-color: #ff4b2b;
@@ -17,7 +17,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-body {
+body {/*Основные параметры страницы*/
     background: linear-gradient(60deg, #5c0808, #2b1383, #2f014b) fixed;
     background-color: #20184a;
     font-family: 'Mulish', sans-serif;
@@ -26,7 +26,7 @@ body {
     overflow-x: hidden;
 }
 
-.header {
+.header {/*Меню*/
     padding: 10px 20px;
     display: flex;
     align-items: center;
@@ -65,7 +65,7 @@ body {
     margin-right: auto;
 }
 
-.content-block {
+.content-block {/*Блок контента*/
     background: var(--glass-bg);
     backdrop-filter: blur(10px);
     border: 1px solid var(--glass-border);
@@ -88,6 +88,7 @@ body {
     max-width: 100%;
     border-radius: 10px;
 }
+/*Заголовки*/
 h1 {
     font-size: clamp(1.8rem, 4vw, 2.5rem);
     color: #ffffff;
@@ -184,6 +185,7 @@ p {
     margin-right: 10px;
     font-size: 1.2rem;
 }
+/*Параметры изменяющиеся от размеров экрана*/
 @media (max-width: 768px) {
     .menuverh {
         display: none;

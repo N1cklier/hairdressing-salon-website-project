@@ -1,3 +1,4 @@
+/*Стили нижней части страницы*/
 .footer {
     /*background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);*/
     /*background: linear-gradient(135deg, #10091c 0%, #170e36 50%, #0c0339 100%);*/
@@ -41,11 +42,11 @@
     text-align: center; 
 }
 
-.footer-section:hover {
+.footer-section:hover {/*При наведении*/
     transform: translateY(-5px);
 }
 
-.footer-section h3 {
+.footer-section h3 {/*Настройка текста*/
     color: #ec4511;
     margin-bottom: 20px;
     font-size: 1.5rem;
@@ -56,7 +57,7 @@
     width: 100%; 
 }
 
-.footer-section h3::after {
+.footer-section h3::after {/*Настройка текста*/
     content: '';
     position: absolute;
     bottom: 0;
@@ -72,7 +73,7 @@
     width: 80px;
 }
 
-.contact-info {
+.contact-info {/*Настройка текста*/
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 15px;
@@ -80,7 +81,7 @@
     text-align: center; 
 }
 
-.contact-info p {
+.contact-info p {/*Настройка текста*/
     color: #c3a9a9;
     margin: 0;
     display: flex;
@@ -107,7 +108,7 @@
     display: none;
 }
 
-.contact-info p:hover {
+.contact-info p:hover {/*Настройка текста*/
     color: white;
     transition: all 0.3s ease;
     font-weight: bold;
@@ -150,7 +151,7 @@
     color: #ec4511;
 }
 
-/* Адаптив для 769-1000px */
+/*Настройки для некоторых размеров экранов*/
 @media (min-width: 769px) and (max-width: 1000px) {
     .footer {
         padding: 35px 20px 18px;
@@ -165,7 +166,6 @@
     }
 }
 
-/* Адаптив для 320-768px */
 @media (max-width: 768px) {
     .footer {
         padding: 30px 15px 15px;
